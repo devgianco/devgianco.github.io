@@ -2,190 +2,122 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giancarlos Claudio Ortiz | Ingeniero de Software</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      overflow-x: hidden;
-    }
-    header {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: rgba(0,0,0,0.2);
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      font-weight: 400;
-      color: #00d4ff;
-      margin-bottom: 1rem;
-    }
-    p {
-      max-width: 700px;
-      margin: 0 auto;
-      line-height: 1.6;
-      color: #e0e0e0;
-    }
-    .typed-text {
-      color: #00d4ff;
-      font-weight: 600;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.7);
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-      z-index: 100;
-      backdrop-filter: blur(5px);
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #00d4ff;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .skill {
-      background: rgba(255,255,255,0.05);
-      padding: 1rem;
-      border-radius: 12px;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .skill:hover { transform: translateY(-5px); background: rgba(255,255,255,0.1); }
-    .skill i {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      color: #00d4ff;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(0,0,0,0.8);
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-    .socials a {
-      color: #00d4ff;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      transition: 0.3s;
-    }
-    .socials a:hover { color: #fff; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV – Giancarlos Claudio Ortiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <nav>
-    <a href="#about">Sobre mí</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#experience">Experiencia</a>
-    <a href="#contact">Contacto</a>
-  </nav>
+  <div class="page">
+    <!-- Sidebar -->
+    <aside class="sidebar card">
+      <figure class="avatar">
+        <img src="img/profile-placeholder.jpg" alt="Foto de perfil"/>
+      </figure>
+      <h1 class="name">Giancarlos Claudio Ortiz</h1>
+      <div class="chip">Ingeniero de Software · Full Stack</div>
 
-  <header>
-    <h1>👋 Hola, soy <span style="color:#00d4ff;">Giancarlos Claudio Ortiz</span></h1>
-    <h2><span class="typed-text"></span></h2>
-    <p>Ingeniero de Software y Desarrollador Full Stack apasionado por crear soluciones innovadoras que integren automatización e inteligencia artificial.</p>
-  </header>
+      <section class="section">
+        <h2><i class="fa-solid fa-user"></i> Perfil</h2>
+        <p>Técnico titulado en Ingeniería de Software con Inteligencia Artificial y estudiante de Ingeniería de Sistemas (convalidación en curso). Más de 2 años de experiencia como Analista de Sistemas, Full‑Stack y Administrador de Base de Datos. Proyectos de automatización con IA, facturación, inventario, costos y sistemas web/escritorio.</p>
+      </section>
 
-  <section id="about">
-    <h2>Sobre mí</h2>
-    <p>Técnico titulado en Ingeniería de Software con especialización en Inteligencia Artificial y estudiante de Ingeniería de Sistemas. Con más de 2 años de experiencia en TI, he liderado proyectos de automatización, facturación, inventario y costeo para empresas. Me motiva el aprendizaje constante y la creación de herramientas tecnológicas que impulsen la productividad organizacional.</p>
-  </section>
+      <section class="section">
+        <h2><i class="fa-solid fa-address-card"></i> Contacto</h2>
+        <ul class="list">
+          <li><i class="fa-solid fa-location-dot"></i> Los Olivos, Lima</li>
+          <li><i class="fa-brands fa-whatsapp"></i> 958 798 429</li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:gianco0614@gmail.com">gianco0614@gmail.com</a></li>
+          <li><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/giancarlos-claudio-ortiz-349891267" target="_blank" rel="noreferrer">/in/giancarlos-claudio-ortiz-349891267</a></li>
+        </ul>
+      </section>
 
-  <section id="skills">
-    <h2>Habilidades Técnicas</h2>
-    <div class="skills">
-      <div class="skill"><i class="fab fa-python"></i><p>Python</p></div>
-      <div class="skill"><i class="fab fa-js"></i><p>JavaScript</p></div>
-      <div class="skill"><i class="fab fa-php"></i><p>PHP</p></div>
-      <div class="skill"><i class="fas fa-database"></i><p>SQL / MySQL</p></div>
-      <div class="skill"><i class="fab fa-git-alt"></i><p>Git / GitHub</p></div>
-      <div class="skill"><i class="fas fa-robot"></i><p>Inteligencia Artificial</p></div>
-    </div>
-  </section>
+      <section class="section">
+        <h2><i class="fa-solid fa-star"></i> Aptitudes</h2>
+        <div class="tags">
+          <span>Gestión de redes</span>
+          <span>Inteligencia artificial</span>
+          <span>Creación de sitios web</span>
+          <span>MySQL</span>
+          <span>Power BI</span>
+          <span>Excel</span>
+        </div>
+      </section>
 
-  <section id="experience">
-    <h2>Experiencia</h2>
-    <p><strong>Jefe de Sistemas — SGA COSTOS</strong> (2025 - Presente)</p>
-    <ul>
-      <li>Liderazgo en planificación y ejecución de proyectos tecnológicos alineados a los objetivos empresariales.</li>
-      <li>Evaluación e incorporación de IA y automatización para mejora continua.</li>
-      <li>Gestión de infraestructura y soporte integral de sistemas.</li>
-    </ul>
-    <br />
-    <p><strong>Analista de Sistemas — SGA COSTOS</strong> (2024 - 2025)</p>
-    <ul>
-      <li>Desarrollo de sistemas web y de escritorio (Kardex, Costeo, Automatización).</li>
-      <li>Administración y optimización de bases de datos MySQL.</li>
-    </ul>
-    <br />
-    <p><strong>Full Stack Developer — Soluciones Integrales JB</strong> (2022 - 2023)</p>
-    <ul>
-      <li>Desarrollo de sistemas de facturación e inventario con PHP, JS y MySQL.</li>
-      <li>Administración de base de datos y despliegue de soluciones en diferentes entornos.</li>
-    </ul>
-  </section>
+      <section class="section">
+        <h2><i class="fa-solid fa-certificate"></i> Certificaciones</h2>
+        <ul class="list">
+          <li>PCAP: Programming Essentials in Python</li>
+          <li>JavaScript Essentials 1 (JSE)</li>
+          <li>Prompting responsable</li>
+          <li>Networking Essentials</li>
+          <li>Git · GitHub Actions</li>
+        </ul>
+      </section>
 
-  <section id="contact">
-    <h2>Contacto</h2>
-    <p>📍 Los Olivos, Lima, Perú</p>
-    <p>📞 958798429</p>
-    <p>📧 <a href="mailto:gianco0614@gmail.com" style="color:#00d4ff;">gianco0614@gmail.com</a></p>
-    <div class="socials">
-      <a href="https://www.linkedin.com/in/giancarlos-claudio-ortiz-349891267" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/devgianco" target="_blank"><i class="fab fa-github"></i></a>
-    </div>
-  </section>
+      <section class="section">
+        <h2><i class="fa-solid fa-trophy"></i> Logros</h2>
+        <p>Campeón Nacional – Olimpiadas Tecnológicas 2023</p>
+      </section>
+    </aside>
 
-  <footer>
-    <p>© 2025 Giancarlos Claudio Ortiz — Ingeniero de Software & Full Stack Developer</p>
-  </footer>
+    <!-- Main -->
+    <main class="content card">
+      <header class="heading">
+        <h2><i class="fa-solid fa-briefcase"></i> Experiencia</h2>
+      </header>
 
-  <script src="https://kit.fontawesome.com/a2e0f1f7c1.js" crossorigin="anonymous"></script>
-  <script>
-    var typed = new Typed('.typed-text', {
-      strings: [
-        'Ingeniero de Software',
-        'Full Stack Developer',
-        'Analista de Sistemas',
-        'Apasionado por la IA'
-      ],
-      typeSpeed: 60,
-      backSpeed: 30,
-      backDelay: 1500,
-      loop: true
-    });
-  </script>
+      <article class="job">
+        <h3>Jefe de Sistemas <span class="muted">— SGA COSTOS</span></h3>
+        <div class="meta">Lima, Perú · julio 2025 – Presente</div>
+        <ul>
+          <li>Liderazgo en la planificación y ejecución de proyectos tecnológicos alineados con los objetivos.</li>
+          <li>Supervisión y gestión del área de sistemas.</li>
+          <li>Evaluación e incorporación de nuevas tecnologías (IA, automatización) para la mejora continua.</li>
+          <li>Gestión de infraestructura tecnológica, asegurando disponibilidad y rendimiento óptimo.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Analista de Sistemas <span class="muted">— SGA COSTOS</span></h3>
+        <div class="meta">Lima, Perú · mayo 2024 – julio 2025</div>
+        <ul>
+          <li>Desarrollo de sistemas de escritorio y aplicaciones web.</li>
+          <li>Implementación de módulos de Kardex y Costeo.</li>
+          <li>Automatización de procesos administrativos y operativos.</li>
+          <li>Administración y optimización de bases de datos MySQL.</li>
+          <li>WooCommerce, e‑learning y reportes en Excel/Power BI.</li>
+          <li>Soporte técnico integral a usuarios y sistemas.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Full‑Stack Developer / DBA <span class="muted">— Soluciones Integrales JB</span></h3>
+        <div class="meta">Chancay, Lima · ene 2022 – dic 2023</div>
+        <p>Desarrollo e implementación de sistemas de Facturación e Inventario web; PHP, JavaScript, AJAX, JSON; administración MySQL/SQL.</p>
+        <ul>
+          <li>Desarrollo de software web y móvil.</li>
+          <li>Gestión de BD y performance.</li>
+          <li>Implementaciones en distintos SO y entornos.</li>
+        </ul>
+      </article>
+
+      <header class="heading">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
+      </header>
+
+      <article class="edu">
+        <h3>Universidad Peruana de Ciencias Aplicadas</h3>
+        <div class="meta">Ingeniería de Sistemas · 2025</div>
+      </article>
+
+      <article class="edu">
+        <h3>SENATI</h3>
+        <div class="meta">Ingeniería de Software · 2021 – 2023</div>
+      </article>
+    </main>
+  </div>
 </body>
 </html>
